@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "0c544dbc-9e3e-4a87-a8ab-62b020266ab4",
+		"name": "Pocs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25169128"
+	},
+	"item": [
+		{
+			"name": "Localidades",
+			"item": [
+				{
+					"name": "EAPI Localidades",
+					"item": [
+						{
+							"name": "Obter Estados",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-eapi-localidades}}/api/v1/estados",
+									"protocol": "http",
+									"host": [
+										"{{url-eapi-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"estados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter Cep",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-eapi-localidades}}/api/v1/cep/:cep",
+									"protocol": "http",
+									"host": [
+										"{{url-eapi-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cep",
+										":cep"
+									],
+									"variable": [
+										{
+											"key": "cep",
+											"value": "13212434"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter Ceps por Logradouro",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-eapi-localidades}}/api/v1/cep?UF=sp&Cidade=sao&Logradouro=jundiai",
+									"protocol": "http",
+									"host": [
+										"{{url-eapi-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cep"
+									],
+									"query": [
+										{
+											"key": "UF",
+											"value": "sp"
+										},
+										{
+											"key": "Cidade",
+											"value": "sao"
+										},
+										{
+											"key": "Logradouro",
+											"value": "jundiai"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PAPI Localidades",
+					"item": [
+						{
+							"name": "Obter Estados",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-papi-localidades}}/api/v1/estados",
+									"protocol": "http",
+									"host": [
+										"{{url-papi-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"estados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter Cep",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-papi-localidades}}/api/v1/cep/:cep",
+									"protocol": "http",
+									"host": [
+										"{{url-papi-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cep",
+										":cep"
+									],
+									"variable": [
+										{
+											"key": "cep",
+											"value": "13212434"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter Ceps por Logradouro",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-papi-localidades}}/api/v1/cep?UF=sp&Cidade=sao&Logradouro=jundiai",
+									"protocol": "http",
+									"host": [
+										"{{url-papi-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cep"
+									],
+									"query": [
+										{
+											"key": "UF",
+											"value": "sp"
+										},
+										{
+											"key": "Cidade",
+											"value": "sao"
+										},
+										{
+											"key": "Logradouro",
+											"value": "jundiai"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SAPI IBGE Localidades",
+					"item": [
+						{
+							"name": "Obter Estados",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-sapi-ibge-localidades}}/api/v1/estados",
+									"protocol": "http",
+									"host": [
+										"{{url-sapi-ibge-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"estados"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter Estado por sigla",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-sapi-ibge-localidades}}/api/v1/estados/:sigla",
+									"protocol": "http",
+									"host": [
+										"{{url-sapi-ibge-localidades}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"estados",
+										":sigla"
+									],
+									"variable": [
+										{
+											"key": "sigla",
+											"value": "rj"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "SAPI ViaCep",
+					"item": [
+						{
+							"name": "Obter Cep",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-sapi-viacep}}/api/v1/cep/:cep",
+									"protocol": "http",
+									"host": [
+										"{{url-sapi-viacep}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cep",
+										":cep"
+									],
+									"variable": [
+										{
+											"key": "cep",
+											"value": "13212434"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter cep por Logradouro",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://{{url-sapi-viacep}}/api/v1/cep?UF=sp&Cidade=sao&Logradouro=jundiai",
+									"protocol": "http",
+									"host": [
+										"{{url-sapi-viacep}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"cep"
+									],
+									"query": [
+										{
+											"key": "UF",
+											"value": "sp"
+										},
+										{
+											"key": "Cidade",
+											"value": "sao"
+										},
+										{
+											"key": "Logradouro",
+											"value": "jundiai"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
